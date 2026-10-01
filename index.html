@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio Lenguaje Sofía</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Kalam:wght@400;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<!-- ============ SPLASH ============ -->
+<div class="splash" id="splash">
+  <div class="splash-card">
+    <div class="emo">📚🎀</div>
+    <h1>Estudio de Lenguaje</h1>
+    <div class="sub">Sofía · 6° básico B · Preparación Evaluación N°3</div>
+    <div class="feat">
+      <span>📓 Cuaderno completo</span><span>💡 Sugerencias</span><span>🎮 9 actividades</span><span>📖 Control de lectura</span><span>🔊 Lectura en voz alta</span>
+    </div>
+    <div class="row">
+      <button class="btn pink" id="startBtn" style="font-size:18px;padding:14px 26px">▶ Comenzar</button>
+      <button class="btn" id="startVoice">🎙️ Elegir voz</button>
+    </div>
+    <p class="note" style="margin-top:18px;background:#ffffffaa">Usa las flechas <kbd>←</kbd> <kbd>→</kbd>, <kbd>Re Pág</kbd> / <kbd>Av Pág</kbd> o tu <b>pasadiapositivas</b>. <kbd>F</kbd> pantalla completa · <kbd>B</kbd> pantalla negra · <kbd>L</kbd> leer en voz alta · <kbd>I</kbd> índice.</p>
+  </div>
+</div>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="brand"><div class="logo">✎</div><span class="n">Lenguaje · Sofía</span></div>
+  <span class="sec-chip" id="secChip">Cuaderno</span>
+  <div class="slide-title" id="slideTitle"></div>
+  <div class="tools">
+    <button class="tbtn" id="btnToc" title="Índice (I)">☰<span class="lbl">Índice</span></button>
+    <button class="tbtn primary" id="btnRead" title="Leer en voz alta (L)">🔊<span class="lbl">Leer</span></button>
+    <button class="tbtn" id="btnStop" title="Detener lectura (S)">⏹</button>
+    <button class="tbtn" id="btnSettings" title="Voz y ajustes">⚙️<span class="lbl">Voz</span></button>
+    <button class="tbtn hide-sm" id="btnPdf" title="Ver PDF original">📄<span class="lbl">PDF</span></button>
+    <button class="tbtn hide-sm" id="btnFull" title="Pantalla completa (F)">⛶</button>
+  </div>
+</header>
+
+<!-- ============ SLIDES ============ -->
+<main class="stage" id="stage">
+
+<!-- ===================== CUADERNO 1 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 1 · ¿Qué significa predecir?" data-page="1">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 1 de 12</span><span class="pg">Estrategia: Predecir</span><span class="pill">Lunes 17 de agosto</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-pink">
+    <div class="date-tag frag rd">17/08/2026 · Lun.</div>
+    <p class="obj frag rd"><b>Obj:</b> Comprender textos mediante estrategia de comprensión lectora <span class="hl">“Predecir acciones y acontecimientos”</span>, logrando formular preguntas sobre lo leído y responderlas.</p>
+    <div class="nb-title frag pop rd"><span class="hl">¿Qué significa predecir?</span></div>
+    <div class="clouds">
+      <div class="cloud frag pop rd">Toda predicción es una posibilidad <br>(puede suceder o no)</div>
+      <div class="cloud frag pop rd">Debe basarse en evidencias del texto</div>
+      <div class="cloud frag pop rd">Requiere usar tus conocimientos previos</div>
+    </div>
+    <div class="nb-title frag rd" style="font-size:1.1em">La ecuación secreta de la predicción</div>
+    <div class="cols3">
+      <div class="col frag left rd"><span class="hl ink-a">Pistas del texto</span><br>¿Qué pistas validan la posibilidad?</div>
+      <div class="op frag pop">+</div>
+      <div class="col frag left rd"><span class="hl ink-a">Tus conocimientos</span><br>¿Qué sé yo sobre este tema?</div>
+      <div class="op frag pop">=</div>
+      <div class="col frag left rd"><span class="hl ink-a">Tu predicción</span><br>¿Qué podría ocurrir a continuación?</div>
+    </div>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p01.jpg"><img src="img/p01.jpg" alt="Foto original de la página 1 del cuaderno"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="1">📄 Ver PDF original (pág. 1)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 2 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 2 · Partes de un afiche" data-page="2">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 2 de 12</span><span class="pg">Propaganda y publicidad</span><span class="pill">Lunes 24 de agosto</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-pink">
+    <div class="date-tag frag rd"><span class="spark">☆</span> 24-08-26</div>
+    <p class="obj frag rd"><b style="font-size:1.2em">Obj:</b> <span class="ink-a">Evaluar críticamente propaganda y publicidad deconstruyendo sus elementos (eslogan, imágenes y estereotipos) para identificar al emisor, su intención y el público objetivo, comprendiendo su impacto.</span></p>
+    <p class="frag rd"><span class="bracket">Partes de un afiche</span></p>
+    <p class="frag rd">Los afiches usan elementos visuales y escritos para captar atención:</p>
+    <p class="def frag left rd"><span class="term">Imagen central:</span> llama la atención.</p>
+    <p class="def frag left rd"><span class="term">Eslogan:</span> frase corta y pegajosa.</p>
+    <p class="def frag left rd"><span class="term">Texto secundario:</span> detalles o fechas.</p>
+    <p class="bracket frag rd"><b>Idea clave:</b> el eslogan usa <span class="hl">rimas o preguntas</span> para ser memorable.</p>
+    <p class="def frag left rd"><span class="term">Emisor</span><br>¿Quién creó y pagó la publicación del afiche?</p>
+    <p class="def frag left rd"><span class="term">Intención</span><br>¿Qué busca lograr: convencer, vender o concientizar?</p>
+    <p class="def frag left rd"><span class="term">Público objetivo</span><br>¿A quién va dirigido según los colores y estilo?</p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p02.jpg"><img src="img/p02.jpg" alt="Foto original de la página 2"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="2">📄 Ver PDF original (pág. 2)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 3 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 3 · Cuidado con los estereotipos" data-page="3">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 3 de 12</span><span class="pg">Estereotipos e impacto</span><span class="pill">continuación 24/08</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-pink">
+    <div class="pink-head frag rd" style="font-size:1.3em">Cuidado con los estereotipos</div>
+    <p class="frag rd"><span class="ink-a" style="font-size:1.3em">¿</span>Qué es un estereotipo<span class="ink-a" style="font-size:1.3em">?</span></p>
+    <p class="frag rd">Es una <span class="hl">idea simplificada</span> sobre cómo debe actuar un grupo. Muchos afiches muestran solo a hombres jugando fútbol o mujeres usando maquillaje. <span class="ink-a">¡</span>Debemos mirar con <span class="hl">espíritu crítico</span><span class="ink-a">!</span></p>
+    <div class="pink-head frag rd">Impacto en la comunidad</div>
+    <p class="frag rd">Los afiches moldean nuestras opiniones y hábitos. Un mensaje bien pensado <span class="hl">promueve la inclusión</span>, mientras que uno engañoso puede <span class="hl">generar prejuicios</span>.</p>
+    <div class="pink-head frag rd">Ejemplo</div>
+    <p class="frag rd">Un afiche sobre respeto en la cancha mejora la convivencia en el colegio. <span class="wiggle">⚽</span></p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p03.jpg"><img src="img/p03.jpg" alt="Foto original de la página 3"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="3">📄 Ver PDF original (pág. 3)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 4 (GUÍA) ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 4 · Guía: Detectives de la publicidad" data-page="4">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 4 de 12</span><span class="pg">Guía “Detectives de la publicidad”</span><span class="pill">✍️ con respuestas</span></div>
+  <div class="reveal-bar"><button class="btn teal" data-toggle-ans>✨ Mostrar / ocultar respuestas</button><span class="note">Lo que escribió Sofía aparece en <span class="student">gris lápiz</span>; las respuestas que faltaban, en <span class="ans-hand" style="font-size:1em">verde</span>.</span></div>
+  <div class="nb-wrap">
+   <div class="ws">
+    <div class="ws-head frag"><h3>DETECTIVES DE LA PUBLICIDAD</h3><small>Actividad breve de análisis crítico</small></div>
+    <div class="ws-obj frag rd"><b>OBJETIVO:</b> Evaluar críticamente una publicidad, identificando su emisor, intención, público objetivo, eslogan, imágenes y estereotipos para comprender su impacto en la sociedad.</div>
+    <div class="ws-sec frag">1. OBSERVA EL ANUNCIO</div>
+    <div class="frag" style="border:3px solid #2e6fbf;border-radius:12px;overflow:hidden">
+      <div style="background:#2e6fbf;color:#fff;text-align:center;font-family:Fredoka;font-weight:700;font-size:1.4em;padding:4px">ENERGÍA X</div>
+      <svg viewBox="0 0 520 170" style="width:100%;display:block;background:#fff">
+        <rect x="58" y="22" width="34" height="18" fill="#f0a72e"/><rect x="40" y="38" width="70" height="112" rx="14" fill="#f5b335" stroke="#d98e12" stroke-width="3"/>
+        <polygon points="75,62 83,84 106,84 88,98 95,120 75,107 55,120 62,98 44,84 67,84" fill="#fff6c8"/>
+        <text x="150" y="52" fill="#e8613a" font-family="Fredoka" font-weight="700" font-size="21">“¡Solo los campeones</text>
+        <text x="150" y="78" fill="#e8613a" font-family="Fredoka" font-weight="700" font-size="21">eligen Energía X!”</text>
+        <text x="205" y="118" fill="#333" font-family="Nunito" font-weight="800" font-size="13">Bebida para jóvenes</text>
+        <text x="205" y="138" fill="#555" font-family="Nunito" font-size="12">Más energía • Más éxito</text>
+        <circle cx="440" cy="40" r="20" fill="#f6d2b0"/><path d="M420 34 Q440 8 460 34" fill="#8a5a2b"/>
+        <polygon points="405,70 475,70 490,150 390,150" fill="#5b9be0"/><line x1="405" y1="74" x2="375" y2="110" stroke="#f6d2b0" stroke-width="9" stroke-linecap="round"/><line x1="475" y1="74" x2="505" y2="110" stroke="#f6d2b0" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="440" cy="88" r="13" fill="#f4c21b" stroke="#e0a800" stroke-width="3"/><circle cx="440" cy="84" r="22" fill="none" stroke="#f4c21b" stroke-width="4"/>
+        <text x="455" y="164" fill="#999" font-size="9" font-family="Nunito">Anuncio ficticio</text>
+      </svg>
+    </div>
+    <div class="ws-sec frag">2. DECONSTRUYE EL MENSAJE</div>
+    <div class="ws-q frag rd"><b>A. ¿Quién es el emisor?</b><div class="opts"><span class="ck"><i>✓</i>Una empresa</span><span class="ck"><i></i>Un estudiante</span><span class="ck"><i></i>Una familia</span></div><div class="hint">Pista: ¿quién creó y publicó el anuncio?</div><div class="ans ans-box">✔ Correcto: <b>una empresa</b> (la marca que vende Energía X).</div></div>
+    <div class="ws-q frag rd"><b>B. ¿Cuál es su intención?</b><div class="opts"><span class="ck"><i>✓</i>Vender</span><span class="ck"><i></i>Entretener</span><span class="ck"><i></i>Enseñar una regla</span></div><div class="hint">Pista: ¿qué quiere que hagamos después de verlo?</div><div class="ans ans-box">✔ Correcto: <b>vender</b> (que compremos la bebida).</div></div>
+    <div class="ws-q frag rd"><b>C. ¿A qué público se dirige?</b><div class="opts"><span class="ck"><i>✓</i>Jóvenes</span><span class="ck"><i></i>Bebés</span><span class="ck"><i></i>Adultos mayores</span></div><div class="hint">Pista: observa la apariencia, los colores y las palabras.</div><div class="ans ans-box">✔ Correcto: <b>jóvenes</b> (lo dice “Bebida para jóvenes” y la imagen de un joven).</div></div>
+    <div class="ws-sec frag">3. IDENTIFICA SUS ELEMENTOS</div>
+    <div class="ws-elems frag rd">
+      <div><b style="color:#e06060">ESLOGAN</b><br><span class="student hide-on-ans" style="opacity:.45">(borroso)</span><span class="ans ans-hand">“¡Solo los campeones eligen Energía X!”</span></div>
+      <div><b style="color:#2e6fbf">IMAGEN</b><br><span class="student">🧴 (dibujo de la botella)</span><span class="ans ans-hand">Botella con estrella + joven con medalla de oro: une la bebida con “ganar”.</span></div>
+      <div><b style="color:#1f9c86">ESTEREOTIPO</b><br><span class="student">La bebida es solo para jóvenes</span><span class="ans ans-hand">Mejor aún: “solo quienes toman Energía X son campeones / exitosos”.</span></div>
+    </div>
+    <div class="ws-think frag rd"><b>4. PIENSA Y OPINA</b><br>¿Qué idea intenta hacernos creer este anuncio?
+      <div class="ans ans-hand">Que si tomamos Energía X seremos campeones: tendremos más energía y más éxito (y eso no depende de una bebida).</div>
+      <div style="margin-top:6px"><b>Completa:</b> “Esta publicidad busca convencer a <span class="ans ans-hand"> los jóvenes </span><span class="hide-on-ans">________</span> de <span class="ans ans-hand"> comprar y tomar Energía X</span><span class="hide-on-ans">________</span>.”</div>
+    </div>
+    <p class="hint" style="text-align:center;margin-top:8px">Escucha • Piensa • Cuestiona • Opina con respeto</p>
+   </div>
+   <aside class="orig"><figure data-zoom="img/p04.jpg"><img src="img/p04.jpg" alt="Foto original de la guía Detectives de la publicidad"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="4">📄 Ver PDF original (pág. 4)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 5 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 5 · Los tres elementos clave" data-page="5">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 5 de 12</span><span class="pg">Emisor · Destinatario · Intención</span><span class="pill">25 y 31 de agosto</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-teal">
+    <div class="date-tag frag rd"><span class="spark">✦</span> 25/08/2026</div>
+    <p class="obj frag rd"><b>Obj:</b> Realizar intervención de comprensión lectora, mediante “Pasaporte lector”, logrando relacionar la información del texto con sus experiencias y conocimientos.</p>
+    <p class="frag rd">Evaluar críticamente propaganda y publicidad, deconstruyendo sus elementos (eslogan, imágenes y estereotipos) para identificar al emisor, su intención y el público objetivo, comprendiendo su impacto en sociedad. <span style="float:right" class="ink-a">31/08/2026 <span class="spark">✦</span></span></p>
+    <p class="obj frag rd cloud" style="text-align:left;border-radius:30px"><b>Obj:</b> Evaluar críticamente la intención comunicativa del emisor en afiches publicitarios, identificando el emisor, el público objetivo y los recursos persuasivos (visuales y textuales) utilizados para fundamentar sus conclusiones.</p>
+    <p class="frag rd"><span class="hl">Los tres elementos clave:</span></p>
+    <p class="frag rd">La comunicación en el afiche.<br>Todo afiche busca convencer o informar mediante tres elementos.</p>
+    <p class="def frag left rd"><span class="hl">Emisor</span>: quien crea el mensaje. <span class="wiggle" style="font-size:1.6em;color:var(--teal);float:right">★</span></p>
+    <p class="def frag left rd"><span class="hl">Destinatario</span>: el público objetivo.</p>
+    <p class="def frag left rd"><span class="hl">Intención</span>: el objetivo, como vender o concienciar.</p>
+    <p class="bracket frag rd"><b>Recuerda:</b> toda imagen y frase tiene una <span class="hl">intención planeada</span>.</p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p05.jpg"><img src="img/p05.jpg" alt="Foto original de la página 5"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="5">📄 Ver PDF original (pág. 5)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 6 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 6 · Pistas del emisor e Inferir" data-page="6">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 6 de 12</span><span class="pg">Pistas del emisor · Inferir información</span><span class="pill">3 de septiembre</span></div>
+  <div class="reveal-bar"><button class="btn teal" data-toggle-ans>✨ Mostrar / ocultar respuesta correcta</button></div>
+  <div class="nb-wrap">
+   <article class="paper t-teal">
+    <p class="frag rd"><span class="spark ink-a">✳</span> El emisor envía el mensaje. Identifícalo buscando pistas visuales y textuales.</p>
+    <p class="def frag left rd"><span class="hl">Logotipo:</span> <span class="cloud" style="display:inline;padding:2px 10px">símbolo gráfico que identifica a la marca.</span></p>
+    <p class="def frag left rd"><span class="hl">Nombre o firma:</span> <span class="cloud" style="display:inline;padding:2px 10px">texto que indica la empresa.</span></p>
+    <p class="def frag left rd"><span class="hl">Eslogan:</span> <span class="cloud" style="display:inline;padding:2px 10px">frase breve que resume sus valores.</span></p>
+    <div class="date-tag frag rd" style="color:#d33;border-color:#d33;float:right">03/09/2026</div>
+    <p class="obj frag rd" style="clear:both"><b class="ink-red">Obj:</b> <span class="ink-navy">Inferir información: aplicar la estrategia de comprensión lectora <b>“Inferir información”</b> mediante la lectura y análisis de textos diversos, para comprender información que no se encuentra expresada directamente en el texto.</span></p>
+    <div class="grid2 frag" style="gap:6px 20px">
+      <div class="rd"><span class="ink-red" style="font-size:1.2em">Pistas</span> <span class="wiggle">🔍</span><br><span class="ink-navy">Datos, detalles y marcas textuales.</span></div>
+      <div class="rd"><span class="ink-red" style="font-size:1.2em">Lo que ya sabes</span> <span class="wiggle">💭</span><br><span class="ink-navy">Tus propios conocimientos.</span></div>
+      <div class="rd"><span class="ink-red" style="font-size:1.2em">Inferencia</span> <span class="wiggle">💡</span><br><span class="ink-navy">La información oculta o implícita.</span></div>
+    </div>
+    <p class="frag rd ink-red" style="font-size:1.1em;margin-top:12px">¿Qué idea implícita sobre la creatividad plantea el texto?</p>
+    <div class="ink-navy frag rd">
+      <p><span class="alt" id="p6a">a)</span> Que cualquier persona puede crear arte, usando los objetos que tiene a su alrededor. <span class="ans ans-hand">← ¡Esta es! ✔</span></p>
+      <p><span class="alt">b)</span> Que solo se necesita un taller especial para hacer arte objetual.</p>
+      <p><span class="alt">c)</span> Que este tipo de arte es exclusivo para artistas profesionales.</p>
+      <p class="hint" style="font-family:Nunito">(la alternativa d) continúa en la página 7)</p>
+    </div>
+    <div class="ans ans-box">💡 <b>¿Por qué la a)?</b> El arte objetual usa objetos cotidianos. Las alternativas b), c) y d) “encierran” el arte (taller, profesionales, museos); la idea implícita es justamente lo contrario: <b>la creatividad está al alcance de todos</b>.</div>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p06.jpg"><img src="img/p06.jpg" alt="Foto original de la página 6"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="6">📄 Ver PDF original (pág. 6)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 7 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 7 · Test inferir y carta formal" data-page="7">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 7 de 12</span><span class="pg">Test “Inferir” · Carta formal</span><span class="pill">Lunes 7 de septiembre</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-navy">
+    <p class="frag rd ink-navy"><span class="ink-red" style="font-size:1.3em">d)</span> Que el arte objetual está restringido a museos.</p>
+    <div class="frag rd" style="text-align:right;color:#d33;font-size:1.15em">Lun 07/09/2026</div>
+    <p class="obj frag rd"><b class="ink-red">Obj:</b> Realizar test de la estrategia de comprensión lectora <span class="hl">“Inferir información”</span>, logrando comparar información de un texto leído con sus conocimientos.</p>
+    <p class="frag rd">• Escribir y adecuar el formato de una <span class="hl">carta formal</span> a dirección, aplicando la estructura del género y revisando la <span class="hl">coherencia y ortografía</span> a través de una pauta de cotejo, para comunicar una <span class="hl">propuesta de mejora escolar</span> con claridad y un registro adecuado según el propósito.</p>
+    <p class="blank-note">(el resto de la página está en blanco)</p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p07.jpg"><img src="img/p07.jpg" alt="Foto original de la página 7"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="7">📄 Ver PDF original (pág. 7)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 8 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 8 · Carta formal de Sofía" data-page="8">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 8 de 12</span><span class="pg">Mi carta formal ✉️</span><span class="pill">8 de septiembre</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-blue letter">
+    <p class="frag rd" style="text-align:center">Chillán, 08/09/2026</p>
+    <p class="frag rd">Estimada directora Blanca Romero Vitón:</p>
+    <p class="frag rd" style="text-indent:2em">Junto con saludarle, esperando que se sienta bien. Quisiera solicitarle un cambio del data del 6° básico B, porque cuando un profesor o profesora necesita proyectar contenido para los estudiantes, la proyección no logra verse bien.</p>
+    <p class="frag rd">Espero tenga una buena tarde.</p>
+    <p class="frag rd">Atentamente; Sofía Vidal, 6°B</p>
+    <svg class="check-svg" viewBox="0 0 260 260"><path d="M20 120 Q60 150 75 230 Q90 160 250 10"/><text x="150" y="110" transform="rotate(-50 150 110)">3 déc</text></svg>
+    <p class="blank-note" style="margin-top:90px">✔ revisada por la profesora</p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p08.jpg"><img src="img/p08.jpg" alt="Foto original de la carta formal"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="8">📄 Ver PDF original (pág. 8)</button><button class="btn gold" data-goto="tip-carta">💡 Ver cómo mejorarla</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 9 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 9 · Aviso y tipos de diálogo" data-page="9">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 9 de 12</span><span class="pg">Sinónimos, hipónimos e hiperónimos</span><span class="pill">Martes 22 de septiembre</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-pink">
+    <div class="frag rd" style="text-align:center"><span style="color:var(--pink);font-size:1.4em">🎀 ♡</span> <span class="date-tag" style="margin:0">22/09/2026 · Martes</span> <span style="font-size:1.4em">♡ 🍓</span></div>
+    <p class="obj frag rd"><b>Obj:</b> Reemplazar palabras por sinónimos, hipónimos e hiperónimos en la reescritura de un texto breve, analizando y seleccionando las opciones más adecuadas, para enriquecer la capacidad expresiva y dar mayor precisión a los mensajes.</p>
+    <div class="p9">
+      <div class="aviso frag pop rd">Señor apoderado:<br>Comunico a usted que la prueba de unidad <b>N°3</b> deberá ser cambiada debido a las actividades del aniversario de nuestro colegio. Esta se realizará el día <span class="hl">lunes 05 de octubre</span>. Sin otro particular, se despide<br>Elizabeth Viscay.</div>
+      <div class="dcard frag">
+        <div class="dc"><span class="n" style="background:#f08a3c">1</span><div><h5>Diálogo real <small>(en la casa)</small></h5><span class="scene">👩‍👧</span> <span class="bub">¿Terminaste tu tarea?</span><br><span class="bub b2">¡Sí! Ya la terminé y me quedó muy bien.</span><br><span class="bub">¡Qué bueno! Estoy muy orgullosa de ti.</span></div></div>
+        <div class="dc"><span class="n" style="background:#6b5be0">2</span><div><h5>Diálogo ficticio <small>(cuento)</small></h5><span class="scene">🦸‍♂️🐶</span> <span class="bub">¿Estás listo para salvar el día, amigo?</span><br><span class="bub b2">¡Por supuesto! ¡Juntos podemos lograrlo!</span><br><span class="bub">¡Vamos!</span></div></div>
+        <div class="dc"><span class="n" style="background:#2b9be0">3</span><div><h5>Situación real <small>(en la calle)</small></h5><span class="scene">🚏</span> <span class="bub">¿A qué hora llega el próximo bus?</span><br><span class="bub b2">¡En cinco minutos! Viene por la avenida.</span><br><span class="bub">¡Perfecto! Gracias.</span></div></div>
+        <div class="dc"><span class="n" style="background:#e58a2c">4</span><div><h5>Aviso <small>(texto informativo)</small></h5><span class="scene">🪧🐕</span> <span class="bub">¡Cuidado! El parque estará cerrado este fin de semana por mantención.</span><br><span class="bub b2">¿Por qué estará cerrado?</span><br><span class="bub">¡Porque harán mejoras en el área de juegos!</span><br><span class="bub b2">¡Qué buena noticia para el próximo mes!</span></div></div>
+        <div class="dc"><span class="n" style="background:#2b6fe0">5</span><div><h5>Diálogo en un texto poético <small>(verso)</small></h5><span class="scene">🌕</span> <span class="bub">¡Qué hermosa es la luna!</span><br><span class="bub b2">¿Volveremos a verla mañana?</span><br><span class="bub">Ojalá que sí…</span></div></div>
+        <div class="dc"><span class="n" style="background:#2b9be0">6</span><div><h5>Diálogo en una noticia <small>(texto periodístico)</small></h5><span class="scene">🎤🏫</span> <span class="bub">¿Cómo se prepara el colegio para este nuevo año?</span><br><span class="bub b2">¡Estamos muy contentos! Será un gran año para todos.</span><br><span class="bub">¡Qué buena noticia!</span></div></div>
+        <div class="dc"><span class="n" style="background:#2b6fe0">7</span><div><h5>Mensaje <small>(correo electrónico)</small></h5><span class="scene">💻✉️</span> <span class="bub">¡Hola, equipo!</span><br><span class="bub b2">¿Podrían enviarme la lista de materiales para la feria?</span><br><span class="bub">¡Muchas gracias!</span></div></div>
+        <div class="dc"><span class="n" style="background:#e07a5a">8</span><div><h5>Diálogo en una conversación <small>(cotidiana)</small></h5><span class="scene">🧒👧</span> <span class="bub">¿Vamos al cine el sábado?</span><br><span class="bub b2">¡Sí! ¿Qué película vemos?</span><br><span class="bub">¡Tú eliges! Lo que quieras.</span></div></div>
+      </div>
+    </div>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p09.jpg"><img src="img/p09.jpg" alt="Foto original de la página 9 con la tarjeta de diálogos"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="9">📄 Ver PDF original (pág. 9)</button><button class="btn gold" data-goto="act-rewrite-s">🎮 Practicar con este aviso</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 10 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 10 · Hecho y opinión" data-page="10">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 10 de 12</span><span class="pg">Hecho vs. opinión</span><span class="pill">Jueves 24 de septiembre</span></div>
+  <div class="nb-wrap">
+   <article class="paper t-pink">
+    <div class="date-tag frag rd">Jueves 24/09/2026 🍓</div>
+    <p class="obj frag rd"><b>Obj:</b> Distinguir un hecho de una opinión. <span class="ink-a">✧</span></p>
+    <div class="grid2" style="gap:14px 26px">
+      <div class="frag left rd"><div class="nb-title" style="text-align:left;margin:4px 0">hecho <span class="ink-a">(objetivo)</span></div>Alude a acontecimientos que ocurren realmente. Son <span class="hl">objetivos</span> porque no se puede negar su ocurrencia.</div>
+      <div class="frag left rd"><div class="nb-title" style="text-align:left;margin:4px 0">opinión <span class="ink-a">(subjetivo)</span></div>Son expresiones <span class="hl">subjetivas</span>. Se basan en creencias, sensaciones, emociones o ideas personales sobre algo.</div>
+    </div>
+    <p class="frag pop rd" style="margin-top:18px;font-size:1.1em"><span class="ink-a" style="font-size:1.5em">¡R</span>ecuerda<span class="ink-a">!</span> Antes de discutir, pregúntate siempre: <span class="hl">¿Es un hecho comprobable o una opinión personal?</span></p>
+    <p class="blank-note frag">📎 Aquí va pegada la “Guía de trabajo: Hecho y opinión” (página 11).</p>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p10.jpg"><img src="img/p10.jpg" alt="Foto original de la página 10"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="10">📄 Ver PDF original (pág. 10)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 11 (GUÍA) ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 11 · Guía: Hecho y opinión" data-page="11">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 11 de 12</span><span class="pg">Guía de trabajo: Hecho y opinión</span><span class="pill">✍️ con respuestas</span></div>
+  <div class="reveal-bar"><button class="btn teal" data-toggle-ans>✨ Mostrar / ocultar respuestas</button><span class="note">Las marcas de Sofía en gris; la respuesta correcta en <span class="ans-hand" style="font-size:1em">verde</span>.</span></div>
+  <div class="nb-wrap">
+   <div class="ws">
+    <div class="frag rd" style="display:flex;gap:12px;align-items:center"><span style="font-size:40px">📖</span><div><h3 style="font-size:1.6em;margin:0">Guía de trabajo: Hecho y opinión</h3>Un <b>hecho</b> es una información que se puede comprobar. Una <b>opinión</b> expresa lo que una persona piensa, siente o cree. <i class="hint">¡Piensa antes de responder!</i></div></div>
+    <div class="guide2" style="margin-top:12px">
+      <div class="frag rd">
+        <h4><span class="g-num">1</span>Lee y clasifica</h4>
+        <div class="hint">Escribe H si es un hecho u O si es una opinión.</div>
+        <div class="g-row"><span>a) Laura Xochitl Cruz creó un dispositivo para producir música.</span><span class="g-box">H<span class="ans ans-hand">✔ H</span></span></div>
+        <div class="g-row"><span>b) La ciencia es la mejor aliada de la naturaleza.</span><span class="g-box">H<span class="ans ans-hand" style="color:#d33">→ O</span></span></div>
+        <div class="g-row"><span>c) El aparato usa electrodos conectados a hojas.</span><span class="g-box">?<span class="ans ans-hand">→ H</span></span></div>
+        <div class="g-row"><span>d) Creo que escuchar a las plantas debe ser maravilloso.</span><span class="g-box">H<span class="ans ans-hand" style="color:#d33">→ O</span></span></div>
+        <div class="g-row"><span>e) La investigadora trabaja con lechugas.</span><span class="g-box">O<span class="ans ans-hand" style="color:#d33">→ H</span></span></div>
+        <div class="g-row"><span>f) Su invento es muy interesante.</span><span class="g-box">O<span class="ans ans-hand">✔ O</span></span></div>
+        <div class="ans ans-box">⚠️ Según la foto, <b>b), d) y e)</b> están marcadas distinto a la respuesta correcta. Claves: “la mejor”, “creo”, “maravilloso”, “muy interesante” = <b>opinión</b>. “Trabaja con lechugas” se puede comprobar = <b>hecho</b>. <i>(La c) no se ve clara en la foto.)</i></div>
+        <p class="hint" style="text-align:right">🌱🎧 ¡La naturaleza también suena!</p>
+      </div>
+      <div class="frag rd">
+        <h4><span class="g-num">2</span>Lee el texto y responde</h4>
+        <div class="g-text">Un grupo de investigadores estudió cómo reaccionan los perros ante el olor del estrés humano. En el estudio participaron 18 parejas perro-propietario. Descubrieron que, cuando las personas estaban estresadas, algunos perros tomaban decisiones más pesimistas. Este estudio fue publicado por científicos de la Universidad de Bristol. <i class="hint">🐶 ¿Los perros también nos entienden?</i></div>
+        <p><b>1.</b> Escribe un hecho del texto.<br><span class="ans ans-hand">En el estudio participaron 18 parejas perro-propietario.</span></p>
+        <p><b>2.</b> Escribe una opinión sobre el tema.<br><span class="ans ans-hand">Creo que es increíble que los perros sientan nuestro estrés.</span></p>
+        <p><b>3.</b> ¿Qué parte de tu respuesta es comprobable?<br><span class="ans ans-hand">Que participaron 18 parejas y que lo publicó la Universidad de Bristol.</span></p>
+        <p><b>4.</b> ¿Qué palabras te ayudan a reconocer una opinión?<br><span class="ans ans-hand">“Creo”, “increíble”, “pienso”, “me parece”, “mejor”…</span></p>
+      </div>
+      <div class="frag rd">
+        <h4><span class="g-num">3</span>Marca la alternativa correcta</h4>
+        <div class="hint">Lee cada oración. ¿Es un hecho o una opinión?</div>
+        <div class="g-row"><span>1. Los microplásticos son pequeños fragmentos de plástico.</span><span><span class="alt circ good">A. Hecho</span> <span class="alt">B. Opinión</span></span></div>
+        <div class="g-row"><span>2. La contaminación por microplásticos es un problema muy grave.</span><span><span class="alt">A. Hecho</span> <span class="alt circ good">B. Opinión</span></span></div>
+        <div class="g-row"><span>3. Estudiantes de Valdivia investigaron este tema.</span><span><span class="alt circ good">A. Hecho</span> <span class="alt">B. Opinión</span></span></div>
+        <div class="g-row"><span>4. Cuidar el mar es una excelente idea.</span><span><span class="alt">A. Hecho</span> <span class="alt circ good">B. Opinión</span></span></div>
+        <div class="ans ans-box">✔ ¡Esta parte la tenías <b>toda correcta</b>! 🦭 “Muy grave” y “excelente” son palabras valorativas → opinión.</div>
+        <p class="hint">🦭 ¡Cuidemos nuestros mares! · Un mar más limpio también protege la vida.</p>
+      </div>
+      <div class="frag rd">
+        <h4><span class="g-num">4</span>Completa y crea</h4>
+        <div class="g-text">🐜 Las hormigas carpinteras pueden amputar extremidades heridas para ayudar a sus compañeras.</div>
+        <p><b>Escribe un hecho sobre las hormigas:</b><br><span class="ans ans-hand">Las hormigas carpinteras pueden amputar extremidades heridas a sus compañeras.</span></p>
+        <p><b>Escribe una opinión sobre las hormigas:</b><br><span class="ans ans-hand">Pienso que las hormigas son admirables porque se cuidan entre ellas.</span></p>
+        <p class="hint" style="text-align:right">¡En equipo también se logran grandes cosas!</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-weight:800;margin-top:10px" class="rd">Distinguir hechos y opiniones nos ayuda a comprender mejor lo que leemos.</p>
+   </div>
+   <aside class="orig"><figure data-zoom="img/p11.jpg"><img src="img/p11.jpg" alt="Foto original de la guía Hecho y opinión"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="11">📄 Ver PDF original (pág. 11)</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== CUADERNO 12 ===================== -->
+<section class="slide" data-section="Cuaderno" data-title="Pág. 12 · Sinónimos, hipónimos e hiperónimos" data-page="12">
+ <div class="slide-inner">
+  <div class="nb-head"><span class="kicker">📓 Cuaderno · página 12 de 12</span><span class="pg">Reescritura con sinónimos</span><span class="pill">29 de septiembre</span></div>
+  <div class="reveal-bar"><button class="btn teal" data-toggle-ans>💡 Mostrar apoyo: ¿qué significa cada palabra?</button></div>
+  <div class="nb-wrap">
+   <article class="paper t-violet" style="--accent:#8a6fc9;--hlc:#e3d9ff">
+    <div class="date-tag frag rd"><span class="spark">✧</span> 29/09/2026 <span class="spark">✧</span></div>
+    <p class="obj frag rd" style="font-size:1.08em"><b>Obj:</b> Reemplazar palabras por <span class="hl">sinónimos</span>, <span class="hl">hipónimos</span> e <span class="hl">hiperónimos</span> en la reescritura de un texto breve, analizando y seleccionando las opciones más adecuadas, para enriquecer la capacidad expresiva y dar mayor precisión a los mensajes. <span class="spark">🌀</span></p>
+    <p class="blank-note frag">(el resto de la página está en blanco)</p>
+    <div class="ans ans-box" style="font-size:.9em">
+      <p><b>🔁 Sinónimo:</b> palabra con significado igual o parecido. <i>bonito = lindo = hermoso</i></p>
+      <p><b>⬆️ Hiperónimo:</b> palabra “paraguas” que incluye a otras. <i>flor</i> incluye a rosa, clavel, margarita.</p>
+      <p><b>⬇️ Hipónimo:</b> palabra específica que está dentro de otra. <i>rosa</i> es un hipónimo de flor.</p>
+      <p style="margin:0">✍️ <b>¿Para qué sirven?</b> Para no repetir palabras: “Compré una <b>rosa</b>. La <b>flor</b> era roja.”</p>
+    </div>
+   </article>
+   <aside class="orig"><figure data-zoom="img/p12.jpg"><img src="img/p12.jpg" alt="Foto original de la página 12"><figcaption>📷 Foto original · toca para ampliar</figcaption></figure><button class="btn pdf" data-pdf="12">📄 Ver PDF original (pág. 12)</button><button class="btn" data-pdf="1">📚 Ver documento completo</button></aside>
+  </div>
+ </div>
+</section>
+
+<!-- ===================== SUGERENCIAS ===================== -->
+<section class="slide" data-section="Sugerencias" data-title="Plan de éxito · Evaluación N°3">
+ <div class="slide-inner divider">
+  <div>
+   <div class="emo frag pop">🏆</div>
+   <h1 class="bigt frag">Plan de éxito<br>Evaluación N°3</h1>
+   <p class="lead frag rd" style="margin:0 auto">Según el aviso de tu cuaderno, la prueba de la unidad N°3 es el <b>lunes 5 de octubre</b>. ¡Tienes tiempo para prepararte!</p>
+   <div class="countdown frag" id="countdown"><div><b data-cd="d">0</b><small>días</small></div><div><b data-cd="h">0</b><small>horas</small></div><div><b data-cd="m">0</b><small>minutos</small></div></div>
+   <p class="frag" style="font-weight:800;color:var(--muted)">A continuación: 9 sugerencias 💡 → 9 actividades 🎮 → control de lectura 📖</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="¿Qué tanto sé? Semáforo">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 1</span>
+  <h2 class="h-slide">¿Qué entra en la prueba? Tu semáforo</h2>
+  <p class="lead rd">Revisando tu cuaderno, estos son los contenidos de la unidad. Marca con honestidad cómo te sientes con cada uno: 🟢 lo domino, 🟡 más o menos, 🔴 necesito repasar. Te diré por dónde empezar.</p>
+  <div class="sema" id="semaforo"></div>
+  <div class="fb info" id="semaFb"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Predecir">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 2</span>
+  <h2 class="h-slide">Predecir sin adivinar 🔮</h2>
+  <p class="lead rd">Una predicción no es un “achunte”: siempre se apoya en pistas. En la prueba, la alternativa correcta es la que <b>el texto permite justificar</b>.</p>
+  <div class="formula">
+    <div class="fx frag pop rd"><span class="big-emoji">🔍</span><b>Pistas del texto</b>lo que leo</div><div class="sym frag pop">+</div>
+    <div class="fx frag pop rd"><span class="big-emoji">🧠</span><b>Lo que sé</b>mi experiencia</div><div class="sym frag pop">=</div>
+    <div class="fx frag pop rd" style="border-color:var(--pink)"><span class="big-emoji">🔮</span><b>Predicción</b>lo que probablemente pasará</div>
+  </div>
+  <div class="grid3">
+    <div class="card pinkc frag rd"><h3>✅ Elige</h3>La alternativa que <b>continúa lógicamente</b> lo que venía pasando (personajes, lugar, problema).</div>
+    <div class="card tealc frag rd"><h3>❌ Descarta</h3>Opciones <b>exageradas</b>, mágicas o que no tienen ninguna pista en el texto.</div>
+    <div class="card violetc frag rd"><h3>🗣️ Justifica</h3>“Creo que ___ <b>porque en el texto dice</b> ___ y yo sé que ___.”</div>
+  </div>
+  <div class="tip frag rd">🎯 Truco: antes de mirar las alternativas, haz tu propia predicción en la cabeza. Luego busca la opción más parecida.</div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Publicidad y propaganda">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 3</span>
+  <h2 class="h-slide">Las 5 preguntas del detective 🕵️‍♀️</h2>
+  <p class="lead rd">Cada vez que veas un afiche en la prueba, hazle estas cinco preguntas en orden. ¡Con eso respondes casi todo!</p>
+  <div class="grid4" style="grid-template-columns:repeat(5,minmax(0,1fr))" id="det5">
+    <div class="card pinkc frag pop rd"><span class="big-emoji">👤</span><h3>¿Quién?</h3><b>Emisor</b>: busca el logotipo, el nombre o la firma.</div>
+    <div class="card goldc frag pop rd"><span class="big-emoji">🎯</span><h3>¿Para qué?</h3><b>Intención</b>: vender, convencer, informar o concientizar.</div>
+    <div class="card tealc frag pop rd"><span class="big-emoji">👥</span><h3>¿Para quién?</h3><b>Público objetivo</b>: mira colores, personajes y palabras.</div>
+    <div class="card violetc frag pop rd"><span class="big-emoji">🎨</span><h3>¿Cómo?</h3><b>Recursos</b>: imagen central, eslogan, colores, texto secundario.</div>
+    <div class="card navyc frag pop rd"><span class="big-emoji">⚠️</span><h3>¿Qué estereotipo?</h3>¿Muestra a un grupo de forma simplificada o injusta?</div>
+  </div>
+  <table class="cmp frag" style="margin-top:16px">
+    <tr><th></th><th>📢 Publicidad</th><th>📣 Propaganda</th></tr>
+    <tr class="rd"><td><b>Busca…</b></td><td><b>Vender</b> un producto o servicio (fin comercial).</td><td><b>Difundir ideas</b>, valores o conductas (sin vender nada).</td></tr>
+    <tr class="rd"><td><b>Ejemplo</b></td><td>“¡Solo los campeones eligen Energía X!”</td><td>“¡Recicla hoy, respira mañana!”</td></tr>
+    <tr class="rd"><td><b>Emisor típico</b></td><td>Empresas, marcas.</td><td>Municipios, ministerios, colegios, fundaciones.</td></tr>
+  </table>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Recursos persuasivos">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 4</span>
+  <h2 class="h-slide">Recursos persuasivos y cómo fundamentar ✍️</h2>
+  <p class="lead rd">“Fundamentar” significa <b>dar razones con pistas del afiche</b>. Los profesores valoran mucho una respuesta que diga <i>por qué</i>.</p>
+  <div class="grid3">
+    <div class="card pinkc frag rd"><h3>🎵 Rima</h3>“Agua de verdad, energía de calidad”. Hace que el eslogan se recuerde.</div>
+    <div class="card goldc frag rd"><h3>❓ Pregunta</h3>“¿Y tú, ya reciclaste hoy?”. Te involucra directamente.</div>
+    <div class="card tealc frag rd"><h3>🚀 Exageración</h3>“Solo los campeones…”, “el mejor del mundo”. Promete más de lo real.</div>
+    <div class="card violetc frag rd"><h3>⭐ Personajes famosos o exitosos</h3>Te hacen creer que si usas el producto serás como ellos.</div>
+    <div class="card navyc frag rd"><h3>📣 Verbos en imperativo</h3>“¡Compra!”, “¡Ven!”, “¡Cuida!”. Dan una orden directa.</div>
+    <div class="card pinkc frag rd"><h3>🎨 Colores y tamaño</h3>Colores llamativos y letras grandes para lo importante; letra chica para lo que no conviene destacar.</div>
+  </div>
+  <div class="tip t frag rd">🧩 Fórmula para responder: “El emisor es <b>___</b> porque <b>(pista: aparece su logo / nombre)</b>. Su intención es <b>___</b>, ya que <b>(pista del eslogan o imagen)</b>. Se dirige a <b>___</b>, lo que se nota en <b>(colores, personajes, palabras)</b>.”</div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Inferir">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 5</span>
+  <h2 class="h-slide">Inferir: leer entre líneas 💡</h2>
+  <p class="lead rd">Inferir es descubrir lo que el texto <b>no dice directamente</b>. La respuesta NO está copiada en el texto, pero las pistas sí.</p>
+  <div class="formula">
+    <div class="fx frag pop rd"><span class="big-emoji">🔍</span><b>Pistas</b>datos, detalles, marcas textuales</div><div class="sym frag pop">+</div>
+    <div class="fx frag pop rd"><span class="big-emoji">💭</span><b>Lo que ya sé</b>mis conocimientos</div><div class="sym frag pop">=</div>
+    <div class="fx frag pop rd" style="border-color:var(--teal)"><span class="big-emoji">💡</span><b>Inferencia</b>la información implícita</div>
+  </div>
+  <div class="grid2">
+    <div class="card tealc frag rd"><h3>🧪 Ejemplo</h3><p><i>“Sofía cerró el paraguas, se sacó las botas mojadas y se acercó a la estufa.”</i></p><p>👉 Inferencia: <b>afuera llovía y hacía frío</b>. ¡El texto nunca dice “llovía”!</p></div>
+    <div class="card violetc frag rd"><h3>🗝️ Preguntas que piden inferir</h3><ul><li>¿Por qué crees que…?</li><li>¿Qué se puede concluir…?</li><li>¿Qué idea implícita…?</li><li>¿Cómo se sentía el personaje?</li><li>¿Qué significa la expresión…?</li></ul></div>
+  </div>
+  <div class="tip frag rd">⚠️ Explícito = está escrito. Implícito = hay que deducirlo. Si una alternativa repite el texto palabra por palabra en una pregunta de inferencia… ¡sospecha!</div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Hecho u opinión">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 6</span>
+  <h2 class="h-slide">El test de los 3 segundos: ¿hecho u opinión? ⚖️</h2>
+  <p class="lead rd">Pregúntate: <b>¿Se puede comprobar?</b> Si se puede verificar con datos, fechas, lugares o cifras → hecho. Si depende de lo que alguien piensa o siente → opinión.</p>
+  <div class="grid2">
+    <div class="card pinkc frag rd"><h3>🚩 Palabras que delatan una OPINIÓN</h3><p class="hint" style="margin-top:0">Toca cada palabra para escucharla 🔊</p><div id="kwO"></div></div>
+    <div class="card tealc frag rd"><h3>📏 Señales de un HECHO</h3><p class="hint" style="margin-top:0">Toca cada palabra para escucharla 🔊</p><div id="kwH"></div></div>
+  </div>
+  <div class="tip p frag rd">🧠 Ojo con la trampa: “Chile es el mejor país para vivir” <b>parece</b> dato, pero “el mejor” lo vuelve opinión. Y “Mucha gente cree que…” es un hecho si se puede comprobar con una encuesta.</div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Sinónimos, hipónimos e hiperónimos">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 7</span>
+  <h2 class="h-slide">El árbol de las palabras 🌳</h2>
+  <p class="lead rd">Para reescribir un texto sin repetir palabras, usa sinónimos (igual significado), hiperónimos (palabra general) e hipónimos (palabra específica).</p>
+  <div class="card frag" style="text-align:center">
+    <svg viewBox="0 0 760 250" style="width:100%;max-width:820px">
+      <rect x="290" y="12" width="180" height="54" rx="16" fill="#7b5cd6"/><text x="380" y="46" text-anchor="middle" fill="#fff" font-family="Fredoka" font-size="24" font-weight="600">ANIMAL</text>
+      <text x="610" y="40" fill="#7b5cd6" font-family="Nunito" font-weight="800" font-size="15">⬆ hiperónimo (general)</text>
+      <g stroke="#cbbff0" stroke-width="4"><line x1="380" y1="66" x2="120" y2="160"/><line x1="380" y1="66" x2="300" y2="160"/><line x1="380" y1="66" x2="470" y2="160"/><line x1="380" y1="66" x2="650" y2="160"/></g>
+      <g font-family="Fredoka" font-size="20" font-weight="600" text-anchor="middle">
+        <rect x="50" y="160" width="140" height="48" rx="14" fill="#ffe3ee"/><text x="120" y="191" fill="#e5467e">🐶 perro</text>
+        <rect x="230" y="160" width="140" height="48" rx="14" fill="#d3f5f1"/><text x="300" y="191" fill="#0b7a72">🐱 gato</text>
+        <rect x="400" y="160" width="140" height="48" rx="14" fill="#fff5cc"/><text x="470" y="191" fill="#9a6b00">🦜 loro</text>
+        <rect x="580" y="160" width="140" height="48" rx="14" fill="#e1e6ff"/><text x="650" y="191" fill="#2d3a8f">🐴 caballo</text>
+      </g>
+      <text x="380" y="240" text-anchor="middle" fill="#6d6a86" font-family="Nunito" font-weight="800" font-size="15">⬇ hipónimos (específicos) · entre ellos son “cohipónimos”</text>
+    </svg>
+  </div>
+  <div class="grid3" style="margin-top:14px">
+    <div class="card pinkc frag rd"><h3>🔁 Sinónimo</h3>contento = feliz = alegre<br><small>Ojo: debe calzar en el contexto. “Pieza” puede ser habitación o parte de una máquina.</small></div>
+    <div class="card violetc frag rd"><h3>✍️ Reescritura</h3><s>Mi perro es juguetón. Mi perro corre todo el día.</s><br>✅ Mi perro es juguetón. <b>La mascota</b> corre todo el día.</div>
+    <div class="card tealc frag rd"><h3>🎯 Precisión</h3>“Compré <b>cosas</b>” es vago.<br>“Compré <b>lápices y cuadernos</b>” es preciso (usé hipónimos).</div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Carta formal" id="tip-carta">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 8</span>
+  <h2 class="h-slide">Carta formal 5 estrellas ✉️⭐</h2>
+  <p class="lead rd">Tu carta al data del 6°B ya tenía lo esencial. Así puedes llevarla al máximo nivel. Toca los botones para comparar.</p>
+  <div class="reveal-bar"><button class="btn" id="letterOrig">📝 Versión de Sofía</button><button class="btn pink" id="letterBest">⭐ Versión mejorada</button></div>
+  <div class="grid2">
+    <div class="paper t-blue" style="min-height:0" id="letterBox"></div>
+    <div>
+      <div class="card navyc rd"><h3>🧱 Estructura</h3><ol style="margin:0;padding-left:1.2em"><li><b>Lugar y fecha</b> (arriba a la derecha)</li><li><b>Destinatario</b>: nombre y cargo</li><li><b>Saludo</b> formal</li><li><b>Cuerpo</b>: presentación → problema → propuesta → razón</li><li><b>Despedida</b> cordial</li><li><b>Firma</b>: nombre y curso</li></ol></div>
+      <div class="tip rd">✅ Pauta de cotejo rápida: ¿uso “usted”? · ¿expliqué el problema <b>y</b> propuse una solución? · ¿mayúsculas y puntos? · ¿sin palabras informales ni emojis? · ¿“Atentamente,” con coma?</div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="Sugerencias" data-title="Sugerencia · Día de la prueba y plan">
+ <div class="slide-inner">
+  <span class="kicker y">💡 Sugerencia 9</span>
+  <h2 class="h-slide">Tu plan hasta el lunes + el día de la prueba 🗓️</h2>
+  <div class="plan">
+    <div class="day frag rd"><h4>Jue 1/10</h4>📓 Repasar págs. 1–4 (predecir, afiches)<br>🎮 Actividades 2 y 6</div>
+    <div class="day frag rd"><h4>Vie 2/10</h4>📓 Págs. 5–8 (emisor, inferir, carta)<br>🎮 Actividades 5 y 8</div>
+    <div class="day frag rd"><h4>Sáb 3/10</h4>📓 Págs. 9–12 (hecho/opinión, sinónimos)<br>🎮 Actividades 1, 3 y 4</div>
+    <div class="day frag rd"><h4>Dom 4/10</h4>🃏 Vocabulario (Act. 7 y 9)<br>📖 Control de lectura completo<br>😴 ¡A dormir temprano!</div>
+    <div class="day exam frag pop rd"><h4>Lun 5/10 🏆</h4>🥣 Buen desayuno<br>💧 Agua y lápices listos<br>💪 ¡Tú puedes, Sofía!</div>
+  </div>
+  <h3 style="margin-top:18px">✅ Checklist durante la prueba <small class="hint">(se guarda en este equipo)</small></h3>
+  <div class="cklist grid2" id="checklist"></div>
+ </div>
+</section>
+
+<!-- ===================== ACTIVIDADES ===================== -->
+<section class="slide" data-section="Actividades" data-title="Actividades interactivas">
+ <div class="slide-inner divider">
+  <div>
+   <div class="emo frag pop">🎮</div>
+   <h1 class="bigt frag">¡A jugar y aprender!</h1>
+   <p class="lead frag rd" style="margin:0 auto">9 actividades para entrenar tus habilidades y aumentar tu vocabulario. Cada respuesta te da retroalimentación al instante 🔊✨</p>
+   <div class="grid3 frag" style="margin-top:20px;text-align:left" id="actMenu"></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 1 · ¿Hecho u opinión?">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 1 · Habilidad: distinguir</span><h2 class="h-slide">¿Hecho u opinión? ⚖️</h2></div><span class="score-chip" data-score="ho">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Toca una tarjeta y luego la caja correcta (o arrástrala). Recuerda: ¿se puede comprobar?</p>
+  <div id="act-ho"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 2 · Detective de afiches">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 2 · Habilidad: analizar críticamente</span><h2 class="h-slide">Detective de afiches 🕵️‍♀️</h2></div><span class="score-chip" data-score="afi">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Analiza los tres afiches. Responde las preguntas del detective para cada uno.</p>
+  <div id="act-afi"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 3 · El árbol de palabras">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 3 · Vocabulario: hiperónimos</span><h2 class="h-slide">El árbol de palabras 🌳</h2></div><span class="score-chip" data-score="arbol">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Cada caja es un <b>hiperónimo</b>. Lleva cada <b>hipónimo</b> a su caja. Después, responde los desafíos de abajo.</p>
+  <div id="act-arbol"></div>
+  <h3 style="margin-top:18px">🧩 Desafíos de reescritura</h3>
+  <div class="grid2" id="act-arbol2"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 4 · Reescribe el aviso" id="act-rewrite-s">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 4 · Vocabulario: sinónimos</span><h2 class="h-slide">Reescribe el aviso con sinónimos ✍️</h2></div><span class="score-chip" data-score="rew">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Este es el aviso de tu cuaderno (pág. 9). Cambia cada palabra marcada por el sinónimo que <b>mantiene el sentido</b>. Luego presiona “Revisar”.</p>
+  <div id="act-rewrite"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 5 · Detective de inferencias">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 5 · Habilidad: inferir</span><h2 class="h-slide">Detective de inferencias 🔍💡</h2></div><span class="score-chip" data-score="inf">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Lee cada situación. ¿Qué se puede inferir? Si te equivocas, recibirás una pista.</p>
+  <div class="grid2" id="act-inf"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 6 · ¿Qué pasará?">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 6 · Habilidad: predecir</span><h2 class="h-slide">¿Qué pasará después? 🔮</h2></div><span class="score-chip" data-score="pred">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Usa la ecuación secreta: pistas del texto + lo que sabes = predicción. Elige la más probable.</p>
+  <div class="grid2" id="act-pred"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 7 · Tarjetas de vocabulario">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 7 · Vocabulario</span><h2 class="h-slide">Tarjetas de vocabulario 🃏</h2></div><span class="score-chip" data-score="voc">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Toca una tarjeta para darla vuelta. Escúchala 🔊 y marca si ya te la sabes. Abajo hay un mini desafío: ¡adivina la palabra!</p>
+  <div class="reveal-bar"><span class="score-chip" id="knownChip">✓ Me las sé: <b>0</b></span><button class="btn sm" id="fcShuffle">🔀 Mezclar</button><button class="btn sm" id="fcFlipAll">🔄 Voltear todas</button></div>
+  <div class="fc-grid" id="act-fc"></div>
+  <h3 style="margin-top:22px">🎯 Adivina la palabra</h3>
+  <div id="act-voc"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 8 · Arma la carta formal">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 8 · Escritura</span><h2 class="h-slide">Arma la carta formal 🧱✉️</h2></div><span class="score-chip" data-score="carta">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Las partes de esta carta se desordenaron. Ordénalas con las flechas ↑↓ (o arrastrando) y presiona “Revisar”.</p>
+  <div id="act-carta"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Actividades" data-title="Actividad 9 · Une conceptos">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker t">🎮 Actividad 9 · Vocabulario de la unidad</span><h2 class="h-slide">Une cada concepto con su definición 🔗</h2></div><span class="score-chip" data-score="match">⭐ <b>0</b>/0</span></div>
+  <p class="lead rd">Toca un concepto a la izquierda y luego su definición a la derecha.</p>
+  <div id="act-match"></div>
+ </div>
+</section>
+
+<!-- ===================== CONTROL DE LECTURA ===================== -->
+<section class="slide" data-section="Control de lectura" data-title="Control de lectura · Texto">
+ <div class="slide-inner">
+  <span class="kicker v">📖 Control de lectura · Parte 1: lee con atención</span>
+  <div class="reading">
+   <article class="lectura" id="lectura">
+    <h2 class="rd">Detectives en el 6° B</h2>
+    <p class="rd"><span class="pn">1</span>El lunes por la mañana, un enorme afiche apareció pegado junto al quiosco del colegio. Mostraba una lata plateada rodeada de rayos y, en letras gigantes, decía: «¡Bebe Turbo-Cola y nunca pierdas!». Abajo, en letras pequeñitas, se leía: «Contiene 35 gramos de azúcar por lata».</p>
+    <p class="rd"><span class="pn">2</span>Los estudiantes del 6° B se detuvieron frente al cartel. Tomás, que siempre llegaba corriendo, exclamó: —¡Esa bebida debe ser la mejor del mundo! Seguro que los futbolistas la toman.</p>
+    <p class="rd"><span class="pn">3</span>Martina, en cambio, frunció el ceño y se acercó para leer la letra pequeña. Sacó su cuaderno, donde tenía anotado con lápiz rosado: «Toda imagen y frase tiene una intención planeada». —Tomás —dijo con calma—, ¿te fijaste en que todas las personas del afiche son hombres musculosos? ¿Y en que el azúcar aparece casi escondido? Tomás se encogió de hombros, pero se quedó pensando.</p>
+    <p class="rd"><span class="pn">4</span>En la clase de Lenguaje, la profesora Elena propuso un desafío: convertirse en “detectives de la publicidad”. Los grupos debían descubrir quién era el emisor del afiche, cuál era su intención y a qué público se dirigía. El grupo de Martina encontró, en una esquina, el logotipo de una empresa de bebidas. Concluyeron que la intención era vender y que el público objetivo eran niños y jóvenes deportistas, porque los colores eran llamativos y aparecía una pelota de fútbol.</p>
+    <p class="rd"><span class="pn">5</span>Luego investigaron en la biblioteca. Encontraron un dato que los sorprendió: la Asociación Americana del Corazón recomienda que niñas y niños consuman menos de 25 gramos de azúcar añadida al día. Una sola lata de Turbo-Cola superaba ese límite.</p>
+    <p class="rd"><span class="pn">6</span>—¡Entonces el eslogan es engañoso! —dijo Tomás, ahora indignado—. Tomar esa bebida no te hace ganar nada. —Eso es una opinión —le recordó Martina, sonriendo—, pero ahora tienes un hecho para fundamentarla.</p>
+    <p class="rd"><span class="pn">7</span>Para el viernes, el curso decidió crear su propio afiche. Dibujaron una botella de agua con alas y escribieron un eslogan: «Agua de verdad, energía de calidad». Incluyeron a niñas y niños de distintas edades practicando diferentes deportes, para no repetir estereotipos. Además, redactaron una carta formal a la directora para solicitar que instalaran un bebedero en el patio.</p>
+    <p class="rd"><span class="pn">8</span>Cuando pegaron su afiche al lado del de Turbo-Cola, varios estudiantes de otros cursos se detuvieron a mirarlo. Una niña de 3° básico lo leyó en voz alta dos veces y luego corrió hacia la sala de su hermano mayor. Martina guardó su lápiz rosado y miró a Tomás: —Creo que acabamos de ganar algo más importante que un partido.</p>
+   </article>
+   <aside class="glos">
+     <div class="card violetc"><h3>📚 Glosario</h3><dl>
+       <dt>frunció el ceño</dt><dd>arrugó la frente, en señal de duda o preocupación.</dd>
+       <dt>se encogió de hombros</dt><dd>gesto de “no sé” o “no me importa”.</dd>
+       <dt>indignado</dt><dd>muy molesto por algo que parece injusto.</dd>
+       <dt>fundamentar</dt><dd>dar razones o pruebas para apoyar una idea.</dd>
+       <dt>bebedero</dt><dd>fuente para beber agua.</dd></dl></div>
+     <div class="tip t">🔊 Usa el botón <b>Leer</b> de arriba: el texto se ilumina mientras se lee.</div>
+     <button class="btn violet" data-next style="width:100%">Ir a las preguntas ➜</button>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="Control de lectura" data-title="Control de lectura · Preguntas">
+ <div class="slide-inner">
+  <span class="kicker v">📖 Control de lectura · Parte 2: responde</span>
+  <h2 class="h-slide">Preguntas sobre “Detectives en el 6° B”</h2>
+  <div id="control"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Control de lectura" data-title="Control de lectura · Preguntas abiertas">
+ <div class="slide-inner">
+  <span class="kicker v">📖 Control de lectura · Parte 3: desarrollo</span>
+  <h2 class="h-slide">Preguntas de desarrollo ✍️</h2>
+  <p class="lead rd">Escribe tu respuesta, luego compárala con la respuesta modelo y evalúate con honestidad.</p>
+  <div class="grid2" id="open"></div>
+ </div>
+</section>
+
+<section class="slide" data-section="Control de lectura" data-title="¡Resultados finales!">
+ <div class="slide-inner">
+  <div class="act-head"><div><span class="kicker v">🏁 Cierre</span><h2 class="h-slide">Tus resultados, Sofía 🌟</h2></div><button class="btn" id="resetAll">↺ Reiniciar todo</button></div>
+  <div class="grid2">
+    <div id="summary"></div>
+    <div class="card pinkc result" id="finalCard"></div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<!-- ============ BOTTOM BAR ============ -->
+<footer class="botbar">
+  <button class="nav" id="prev" title="Anterior (←)">‹</button>
+  <div class="progress" id="progress"><i></i></div>
+  <span class="counter" id="counter">1 / 1</span>
+  <button class="nav" id="next" title="Siguiente (→)">›</button>
+</footer>
+<div class="step-ind" id="stepInd"><span id="stepTxt"></span><button id="showAll">Mostrar todo</button></div>
+
+<!-- ============ PANELS ============ -->
+<aside class="side" id="toc"><div class="modal-head"><h3>☰ Índice</h3><button class="x" data-close="toc">✕</button></div><div class="side-body toc" id="tocBody"></div></aside>
+
+<aside class="side right" id="settings">
+  <div class="modal-head"><h3>🎙️ Voz y ajustes</h3><button class="x" data-close="settings">✕</button></div>
+  <div class="side-body">
+    <div class="set-row"><label class="t" for="voiceSel">Voz para leer en voz alta</label><select id="voiceSel"></select>
+      <label class="sw" style="font-size:13px"><input type="checkbox" id="allVoices"> Mostrar voces en otros idiomas</label></div>
+    <div class="set-row"><label class="t">Velocidad: <span id="rateV">1</span>×</label><input type="range" id="rate" min="0.6" max="1.5" step="0.05"></div>
+    <div class="set-row"><label class="t">Tono: <span id="pitchV">1</span></label><input type="range" id="pitch" min="0.6" max="1.6" step="0.05"></div>
+    <button class="btn violet" id="testVoice" style="width:100%">▶ Probar voz</button>
+    <p class="note" style="margin-top:10px">🌐 = voz <b>en línea</b> (necesita internet, suena más natural). En <b>Microsoft Edge</b> busca las voces “Online (Natural)”, por ejemplo <i>Catalina (Chile)</i>; en <b>Chrome</b>, las “Google español”.</p>
+    <div class="set-row">
+      <label class="sw"><input type="checkbox" id="speakFb"> Leer retroalimentación en voz alta</label>
+      <label class="sw"><input type="checkbox" id="autoRead"> Leer cada diapositiva automáticamente</label>
+      <label class="sw"><input type="checkbox" id="clickRead"> Tocar un párrafo para escucharlo</label>
+      <label class="sw"><input type="checkbox" id="steps"> Animación paso a paso (pasadiapositivas)</label>
+      <label class="sw"><input type="checkbox" id="sound"> Sonidos de acierto/error</label>
+    </div>
+    <h4>⌨️ Atajos</h4>
+    <div class="keys">
+      <span><kbd>→</kbd> <kbd>Av Pág</kbd> <kbd>Espacio</kbd></span><span>siguiente paso / diapositiva</span>
+      <span><kbd>←</kbd> <kbd>Re Pág</kbd></span><span>anterior</span>
+      <span><kbd>Inicio</kbd> <kbd>Fin</kbd></span><span>primera / última</span>
+      <span><kbd>F</kbd> <kbd>F5</kbd></span><span>pantalla completa</span>
+      <span><kbd>B</kbd> <kbd>.</kbd> / <kbd>W</kbd></span><span>pantalla negra / blanca</span>
+      <span><kbd>L</kbd> / <kbd>S</kbd></span><span>leer / detener</span>
+      <span><kbd>I</kbd> <kbd>G</kbd></span><span>índice</span>
+      <span><kbd>P</kbd></span><span>PDF original</span>
+    </div>
+  </div>
+</aside>
+
+<div class="overlay" id="pdfModal">
+  <div class="modal-card">
+    <div class="modal-head"><h3>📄 Documento original · LENGUAJE_SOFIA.pdf</h3><div class="pgs" id="pdfPages"></div><a class="btn sm" id="pdfOpen" href="LENGUAJE_SOFIA.pdf" target="_blank" rel="noopener">↗ Abrir aparte</a><button class="x" data-close="pdfModal">✕</button></div>
+    <div id="pdfHost"></div>
+  </div>
+</div>
+<div class="overlay" id="zoomModal">
+  <div class="modal-card">
+    <div class="modal-head"><h3>📷 Foto original <small class="hint">· toca la imagen para hacer zoom</small></h3><button class="x" data-close="zoomModal">✕</button></div>
+    <div id="zoomHost"><img id="zoomImg" alt="Foto original ampliada"></div>
+  </div>
+</div>
+<div class="blackout" id="blackout"></div>
+<div class="toast" id="toast"></div>
+<canvas id="confetti"></canvas>
+
+<script src="app.js?v=2"></script>
+</body>
+</html>
